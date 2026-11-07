@@ -5,8 +5,6 @@ import PapercutPage from './skins/papercut/PapercutPage'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <main className="main">
-      <PapercutPage />
-    </main>
+    <PapercutPage />
   </StrictMode>,
 )

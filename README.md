@@ -1,8 +1,12 @@
 # Papercut · Video.js skin
 
-A naive construction-paper skin for [Video.js v10](https://videojs.org): wobbly scissor cuts, a pinking-shear control strip and a googly-eye playhead. Includes an iPhone Duo layout with a fold simulation (closed/open, vertical/horizontal).
+A naive construction-paper skin for [Video.js v10](https://videojs.org): wobbly scissor cuts, a pinking-shear control strip and a googly-eye playhead.
 
 Made for the Video.js Skins Design Challenge.
+
+## Live demo
+
+https://luzbas.github.io/papercut-player/
 
 ## Use the skin
 
