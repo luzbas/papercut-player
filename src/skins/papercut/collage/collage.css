@@ -1036,6 +1036,12 @@
       --h: 52;
       --r: -4;
     }
+    /* Only the gear shows here (the word is hidden), so centre it in the square tab. */
+    .papercut-collage .pcc-settings.media-button {
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+    }
     .papercut-collage .pcc-fullscreen {
       --x: 300;
       --y: 690;
