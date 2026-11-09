@@ -1601,6 +1601,22 @@
     display: none;
   }
 
+  /* ---------- Performance ---------- */
+  /* The big paper pieces are rotated, grained and run through the SVG wobble filter, which is slow to paint (worst on
+     phones). Without their own compositor layers, every timeline/time update while playing repainted them as well,
+     dropping frames in the portrait layout. On their own layers they're painted once and only composited after that;
+     the strip and time label, which change every frame, get layers too so their repaints stay small. */
+  .papercut-collage :is(.pcc-deco, .pcc-photo, .pcc-strip, .pcc-time) {
+    will-change: transform;
+  }
+
+  /* Touch screens: the scrub preview's text changes on every move, so skip the wobble filter there. */
+  @media (pointer: coarse) {
+    .papercut-collage .media-time-slider-preview-content {
+      filter: var(--pcc-shadow);
+    }
+  }
+
   /* ---------- Preferences ---------- */
   @media (prefers-reduced-motion: reduce) {
     .papercut-collage .pcc-piece.media-button,
