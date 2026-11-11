@@ -57,3 +57,16 @@ body { margin: 0; background: var(--bg); }
   .stage { padding: 16px; }
   .stage__player { border-radius: 8px; }
 }
+
+/* The Duo page: the skin's iPhone Duo layout inside the fold simulator. */
+.duo-page { max-width: 1100px; margin: 0 auto; padding: 32px 24px 48px; }
+.duo-page__header h1 { margin: 0 0 6px; font-size: 1.75rem; }
+.duo-page__header p { margin: 0 0 16px; color: var(--muted); max-width: 70ch; }
+.duo-page__header p.duo-page__links { display: flex; gap: 16px; margin: 0 0 24px; }
+.duo-page__links a { color: var(--text); font-weight: 500; text-underline-offset: 3px; }
+.duo-page__links a:hover { color: var(--muted); }
+.duo-page__links a:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; border-radius: 2px; }
+@media (max-width: 600px) { .duo-page { padding: 20px 16px 32px; } }
+
+.source-links { position: fixed; right: 16px; bottom: 12px; display: flex; gap: 14px; }
+.source-links .source-link { position: static; }

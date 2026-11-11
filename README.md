@@ -26,6 +26,14 @@ import { CollageVideoSkin } from './skins/papercut/collage/collage-skin';
 
 A plain `<Video src="…mp4" />` works in place of `HlsVideo` too.
 
+## iPhone Duo
+
+The skin also has a layout for foldable phones, shown on the iPhone Duo in a fold simulator: https://luzbas.github.io/papercut-player/duo/
+
+Pick a pose (Horizontal or Vertical, each open or closed, or Table) and the player re-lays itself out for the inner display, the propped-up split or the closed outer display, without stopping the video. On a real foldable it reads the same signals from the browser (device posture and viewport segments).
+
+The Duo layout is in `src/skins/papercut/duo`, and needs `src/duo-kit` (fold detection and the simulator). Use `DuoVideoSkin` from `./skins/papercut/duo/duo-skin` in place of the regular skin. The simulator page is `duo/index.html`.
+
 ## Run locally
 
 ```bash
