@@ -2,6 +2,8 @@
   --bg: #f6f5f2;
   --muted: #6b6862;
   --text: #1c1b19;
+  --surface: #ffffff;
+  --border: #e3e0da;
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   color: var(--text);
   background: var(--bg);
@@ -13,6 +15,8 @@
     --bg: #141412;
     --muted: #a19d95;
     --text: #f1efea;
+    --surface: #1d1c1a;
+    --border: #2f2d2a;
   }
 }
 
