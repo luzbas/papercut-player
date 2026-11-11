@@ -11,11 +11,7 @@ export default function PapercutDuoPage() {
   return (
     <main className="duo-page">
       <header className="duo-page__header">
-        <h1>Papercut · Duo</h1>
-        <p>
-          The same paper on the iPhone Duo. Open it, close it, turn it: the player follows you from the inner display to
-          the outer one and re-lays itself out for each, without stopping the video.
-        </p>
+        <h1 className="visually-hidden">Papercut · Duo</h1>
         <p className="duo-page__links">
           <a href="../">Player</a>
           <a href="https://github.com/luzbas/papercut-player">GitHub</a>
